@@ -110,14 +110,14 @@
     .navbar .menu {
         display: none;
         position: absolute;
-        top: 80px;
+        top: 90px;
         left: 0;
-        background: #1a1a2e;
+        background: #52525283;
         width: 100%;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        padding: 20px 0;
+        gap: 10px;
+        padding: 10px 0;
     }
 
     .navbar .menu a {
@@ -622,4 +622,21 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 </script>
+  <script>
+    document.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+    });
+
+    // Disable key combinations (like Ctrl+U, Ctrl+C, etc.)
+    document.addEventListener("keydown", (e) => {
+      if (
+        (e.ctrlKey && (e.key === "u" || e.key === "U")) || // Disable Ctrl+U (view source)
+        (e.ctrlKey && (e.key === "c" || e.key === "C")) || // Disable Ctrl+C (copy)
+        (e.ctrlKey && (e.key === "s" || e.key === "S")) || // Disable Ctrl+S (save)
+        (e.ctrlKey && (e.key === "p" || e.key === "P"))    // Disable Ctrl+P (print)
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
 </html>
