@@ -92,13 +92,14 @@
       height: 50px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid var(--secondary);
+      border: 2px solid ;
+      color: rgb(0, 255, 64);
       transition: var(--transition);
     }
 
     .navbar-logo img:hover {
       transform: scale(1.1);
-      border-color: var(--accent);
+      border-color: red;
     }
 
     .navbar-logo h1 {
@@ -303,7 +304,8 @@
       height: 300px;
       border-radius: 50%;
       object-fit: cover;
-      border: 5px solid var(--primary);
+      border: 5px solid ;
+      color: green;
       box-shadow: var(--shadow-lg);
       transition: var(--transition);
     }
@@ -368,13 +370,13 @@
     }
 
     .skill-card {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(19, 18, 18, 0.281);
       backdrop-filter: blur(10px);
       border-radius: var(--border-radius-md);
       padding: 30px;
       text-align: center;
       transition: var(--transition);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 210, 7, 0.479);
     }
 
     .skill-card:hover {
@@ -654,7 +656,7 @@
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-logo">
-        <img src="https://scontent.fbir7-1.fna.fbcdn.net/v/t39.30808-6/476616888_1337842294008732_2400836126177255027_n.jpg?stp=cp6_dst-jpg_s1080x2048_tt6&_nc_cat=100&ccb=1-7&_nc_sid=669761&_nc_eui2=AeE9fJ7xWAkttbG5mj2ylWJ3EsePi0LyEhASx4-LQvISEH9u-_tcCksNyPQWGFF2QxLqu78azDw8FaPC97dgSHbf&_nc_ohc=RLNQX0i5cQsQ7kNvwGnXm8P&_nc_oc=AdlS9oDXDOAJelbmo0tysa-rGTmV11TCMgSHqPMJcLELqxd-aDIE_zMW6MkNN3ZtpM0Vq5F8r7l5u_6aKDtE0I5-&_nc_zt=23&_nc_ht=scontent.fbir7-1.fna&_nc_gid=c9fFXxQHlEknxkZsmuUMGg&oh=00_AfLn4X--3yUMrTFd3vvrNNfuCm4nQP6MD3YN_Ud8nr9C-Q&oe=6823A7A1" alt="Roman">
+        <img src="Untitled33.jpeg" alt="Roman">
         <h1>Roman's Portfolio</h1>
       </div>
       
@@ -698,13 +700,20 @@
     <div class="container">
       <div class="about-container">
         <div class="about-image">
-          <img src="https://scontent.fbir7-1.fna.fbcdn.net/v/t39.30808-6/487976932_1379292659863695_221774829882394741_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=669761&_nc_eui2=AeF8D8nbxmPm31_7KauuhGdaUiCgeRyLVARSIKB5HItUBNgToGxfj4oZ2uPCPJ0ZjEJgfIs-EZHmP4ufU7bWD8rk&_nc_ohc=xUyN9llwFd8Q7kNvwHOM-tz&_nc_oc=AdnaiBYEFshfr1CU5_3aBa3nSDG-PUUAxblV3iYhn91ZMR8O2lp21Ow2jNU8CpAf80xjRQI9BQGVux5UQTRpeMAw&_nc_zt=23&_nc_ht=scontent.fbir7-1.fna&_nc_gid=c9fFXxQHlEknxkZsmuUMGg&oh=00_AfJSazkHJ8MyJJsgn6gFeww40wHmuuo8QYJDOSVmj8B7TA&oe=68239846" alt="Roman">
+          <img src="Untitled.jpeg" alt="Roman">
         </div>
         <div class="about-content">
           <h2 class="section-title">About Me</h2>
-          <p class="about-text">Hi, I'm Roman! A passionate web developer and designer with expertise in creating engaging websites. I specialize in front-end technologies and UI/UX design. My mission is to design user-friendly, visually appealing websites that provide a seamless experience across all devices.</p>
-          <p class="about-text">With a keen eye for detail and a commitment to excellence, I strive to deliver high-quality web solutions that not only meet but exceed client expectations.</p>
-        </div>
+<p class="about-text">
+  Hi, I'm Roman! A passionate web developer and designer with expertise in creating engaging websites and intelligent user experiences. I specialize in front-end technologies, UI/UX design, and AI chatbot development.
+</p>
+<p class="about-text">
+  My mission is to design user-friendly, visually appealing websites that provide a seamless experience across all devices. In addition to web design, I craft smart, conversational AI chatbots that enhance user interaction and automate support with modern, intuitive interfaces.
+</p>
+<p class="about-text">
+  With a keen eye for detail and a commitment to excellence, I strive to deliver high-quality digital solutions that not only meet but exceed client expectations.
+</p>
+
       </div>
     </div>
   </section>
@@ -734,6 +743,11 @@
             <img src="https://cdn-icons-png.flaticon.com/512/8448/8448908.png" alt="UI/UX Design" class="skill-icon">
             <h3 class="skill-title">UI/UX Design</h3>
             <p class="skill-description">Designing beautiful user interfaces and creating memorable user experiences.</p>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn-icons-png.flaticon.com/128/7167/7167276.png" alt="BOT Chat" class="skill-icon">
+            <h3 class="skill-title">BOT Chat</h3>
+            <p class="skill-description">Creating intelligent chatbots and conversational AI interfaces for enhanced user interaction.</p>
           </div>
         </div>
       </div>
@@ -836,7 +850,7 @@
     document.addEventListener('keydown', function(e) {
       if (
         (e.ctrlKey && (e.key === 'u' || e.key === 'U')) || // Disable Ctrl+U (view source)
-        (e.ctrlKey && (e.key === 'c' || e.key === 'C')) || // Disable Ctrl+C (copy)
+       
         (e.ctrlKey && (e.key === 's' || e.key === 'S')) || // Disable Ctrl+S (save)
         (e.ctrlKey && (e.key === 'p' || e.key === 'P'))    // Disable Ctrl+P (print)
       ) {
